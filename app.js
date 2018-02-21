@@ -165,8 +165,8 @@ app.get('/geolocationExtInfo/:query', function (req, res) {
 
   var config = {
     headers: {
-      'X-Naver-Client-Id' : 'Bx3k9QA02ShYeDVyLQpf',
-      'X-Naver-Client-Secret' : 'DvfCZekAZs'
+      'X-Naver-Client-Id' : '{YOUR_NAVER_CLIENT_ID}',
+      'X-Naver-Client-Secret' : '{YOUR_NAVER_CLIENT_SECRET}'
     }
   };
 
