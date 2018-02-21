@@ -8,8 +8,8 @@ require('dotenv').config();
 const axios = require('axios');
 const CryptoJS = require("crypto-js");
 
-const consumerKey = '08kP7bvdWL3X32pkB6wC';
-const consumerSecret = 'eWJ1loEkLMkW3LjqupuDKiC1W1hzxv75xtR8cpbV';
+const consumerKey = '{YOUR_CONSUMER_KEY}';
+const consumerSecret = '{YOUR_CONSUMER_SECRET}';
 const requestMethod = "GET";
 const requestUrl= 'https://api.ncloud.com/geolocation/';
 
@@ -92,7 +92,7 @@ app.get('/geolocationMap', function (req, res) {
       '<meta http-equiv="X-UA-Compatible" content="IE=edge">'+
       '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">'+
       '<title>간단한 지도 표시하기</title>'+
-      '<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=EEMXt6n2ZpNPF3noBdSI"></script>'+
+      '<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId={YOUR_NAVER_CLIENT_ID}"></script>'+
     '</head>'+
     '<body>'+
     '<div id="map" style="width:100%;height:400px;"></div>'+
@@ -131,7 +131,7 @@ app.get('/geolocationPano', function (req, res) {
       '<meta http-equiv="X-UA-Compatible" content="IE=edge">'+
       '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">'+
       '<title>간단한 지도 표시하기</title>'+
-      '<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=EEMXt6n2ZpNPF3noBdSI&amp;submodules=panorama,geocoder,drawing,visualization"></script>'+
+      '<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId={YOUR_NAVER_CLIENT_ID}&amp;submodules=panorama,geocoder,drawing,visualization"></script>'+
     '</head>'+
     '<body>'+
     '<div id="pano" style="width:100%;height:600px;"></div>'+
